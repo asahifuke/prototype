@@ -14,11 +14,6 @@ Memo.prototype.save = function() {
   db.run("insert into memos(body) values(?)", this.body);
 }
 
-// Memo.all = function() {
-//   const memos = []
-//   db.all(`SELECT * FROM memos`, (error, rows) => rows.forEach(row => memos.push(new Memo(row.body, row.id))))
-//   return memos
-// }
 Memo.all = () => {
   return new Promise((resolve, reject) => {
     const memos = []

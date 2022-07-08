@@ -14,5 +14,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.3.0",
+    "enquirer": "^2.3.6",
+    "sqlite3": "^5.0.8"
+  }
 }
